@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Text Formatting in HTML</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            font-family: 'Noto Sans Khmer', sans-serif;
+        }
+
+        header {
+            background-color: grey;
+            margin: 0 auto;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+        }
+
+        .container {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            width: 50%;
+            height: 55px;
+            justify-content: space-between;
+        }
+
+        .container>ul:first-child>li {
+            list-style: none;
+        }
+
+        .container>ul:first-child>li>a {
+            text-decoration: none;
+            color: white;
+            display: flex;
+            align-items: center;
+            flex-wrap: nowrap;
+            flex-direction: row;
+        }
+
+        .container>ul:first-child>li>a>img {
+            height: auto;
+            width: 40px;
+            border-radius: 50%;
+            margin-right: 10px;
+        }
+
+        .container>ul:first-child>li>a>h3 {
+            font-size: x-large;
+            font-weight: 900;
+        }
+
+        .container>ul:nth-child(2) {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: nowrap;
+            align-items: center;
+        }
+
+        .container>ul:nth-child(2)>li {
+            padding: 0 20px;
+            list-style: none;
+        }
+
+        .container>ul:nth-child(2)>li>a {
+            text-decoration: none;
+            color: rgb(221, 221, 221);
+            font-size: 1.3rem;
+        }
+
+        .container>ul:nth-child(2)>li>a:hover {
+            color: white;
+        }
+
+        section{
+            margin-top: 100px;
+            margin: auto;
+            width: 50%;
+        }
+
+        section > h1:first-child{
+            font: bold;
+            font-size: 2rem;
+            margin: 10px 0;
+            border-bottom: 0.5px solid;
+        }
+
+        .h-space{
+            margin: 10px 0;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <div class="container">
+            <ul>
+                <li>
+                    <a href="/">
+                        <img style="height:auto;" alt="" src="https://avatars.githubusercontent.com/u/77770197?v=4"
+                            width="260" height="260" class="avatar avatar-user width-full border color-bg-default">
+                        <h3>Chhon Nat</h3>
+                    </a>
+                </li>
+            </ul>
+            <ul>
+                <li><a href="/">Home</a></li>
+            </ul>
+
+        </div>
+    </header>
+
+    <section>
+        <h1>Here is my lap 2 :</h1>
+
+
+      <ol>
+          <li>
+            <h2>h-Tags</h2>
+            <div class="h-space">
+                <h1>This is a Heading 1</h1>
+                <h2>This is a Heading 2</h2>
+                <h3>This is a Heading 3</h3>
+                <h4>This is a Heading 4</h4>
+                <h5>This is a Heading 5</h5>
+                <h6>This is a Heading 6</h6>
+              </div>
+        
+        
+                <p>This is a <a href="https://www.example.com">link</a> to an example website.</p>
+        </li>
+        <li>
+            <h2>b-Tags</h2>
+            <div class="h-space">
+                <b>This is a paragraph. It contains some b-tags text.</b>
+
+            </div>
+        </li>
+        <li>
+            <h2>big-Tags</h2>
+            <div class="h-space">
+                <big>This is a paragraph. It used with big-tags text.</big>
+            </div>
+        </li>
+        <li>
+            <h2>em-Tags</h2>
+            <div class="h-space">
+                <em>This is another paragraph with emphasized text.</em>
+            </div>
+        </li>
+        <li>
+            <h2>i-Tags</h2>
+            <div class="h-space">
+                <i>This is another paragraph with <strong>i-tag</strong> text.</i>
+            </div>
+        </li>
+        <li>
+            <h2>small-Tags</h2>
+            <div class="h-space">
+                <small>This is another paragraph with small-tag text.</small>
+            </div>
+        </li>
+        <li>
+            <h2>Strong-Tags</h2>
+            <div class="h-space">
+                <strong>This is another paragraph with Strong-tag text.</strong>
+            </div>
+        </li>
+        <li>
+            <h2>Sup-Tags</h2>
+            <div class="h-space">
+                <sup>This is a code  element  used with sup-tag for displaying code.</sup>
+            </div>
+        </li>
+        <li>
+            <h2>Sub-Tags</h2>
+            <div class="h-space">
+                <sub>This is a code  element  used with sub-tag for displaying code.</sub>
+            </div>
+        </li>
+        <li>
+            <h2>ins-Tags</h2>
+            <div class="h-space">
+                <ins>This is a paragraph. It used with ins-tags text.</ins>
+            </div>
+        </li>
+        <li>
+            <h2>del-Tags</h2>
+            <div class="h-space">
+                <del>This is a paragraph. It used with del-tags text.</del>
+            </div>
+        </li>
+        <li>
+            <h2>code-Tags</h2>
+            <div class="h-space">
+                <code>This is a paragraph. It used with code-tag text.</code>
+            </div>
+        </li>
+        <li>
+            <h2>kdb-Tags</h2>
+            <div class="h-space">
+                <kbd>This is another paragraph with kdb-tag text.</kbd>
+            </div>
+        </li>
+        <li>
+            <h2>samp-Tags</h2>
+            <div class="h-space">
+                <samp>This is another paragraph with samp-tag text.</samp>
+            </div>
+        </li>
+        <li>
+            <h2>tt-Tags</h2>
+            <div class="h-space">
+                <tt>This is another paragraph with tt-tag text.</tt>
+            </div>
+        </li>
+        <li>
+            <h2>pre-Tags</h2>
+            <div class="h-space">
+                <pre>This is another paragraph with pre-tag text.</pre>
+            </div>
+        </li>
+        <li>
+            <h2>var-Tags</h2>
+            <div class="h-space">
+                <var>This is another paragraph with var-tag text.</var>
+            </div>
+        </li>
+        <li>
+            <h2>abbr-Tags</h2>
+            <div class="h-space">
+                <abbr>This is another paragraph with abbr-tag text.</abbr>
+            </div>
+        </li>
+        <li>
+            <h2>acronym-Tags</h2>
+            <div class="h-space">
+                <acronym>This is another paragraph with abbr-tag text.</acronym>
+            </div>
+        </li>
+        <li>
+            <h2>address-Tags</h2>
+            <div class="h-space">
+                <address>This is another paragraph with address-tag text.</address>
+            </div>
+        </li>
+        <li>
+            <h2>bdo-Tags</h2>
+            <div class="h-space">
+                <bdo>This is another paragraph with bdo-tag text.</bdo>
+            </div>
+        </li>
+        <li>
+            <h2>blockquote-Tags</h2>
+            <div class="h-space">
+                <blockquote>This is another paragraph with blockquote-tag text.</blockquote>
+            </div>
+        </li>
+        <li>
+            <h2>q-Tags</h2>
+            <div class="h-space">
+                <q>This is another paragraph with q-tag text.</q>
+            </div>
+        </li>
+        <li>
+            <h2>cite-Tags</h2>
+            <div class="h-space">
+                <cite>This is another paragraph with cite-tag text.</cite>
+            </div>
+        </li>
+        <li>
+            <h2>dfn-Tags</h2>
+            <div class="h-space">
+                <dfn>This is another paragraph with dfn-tag text.</dfn>
+            </div>
+        </li>
+        <li>
+            <h2>u-Tags</h2>
+            <div class="h-space">
+                <p>This is a <u>underline</u> text.</p>
+            </div>
+        </li>
+        <li>
+            <h2>a-Tags</h2>
+            <div class="h-space">
+                <p>This is a <a href="https://www.example.com">link</a> to an example website.</p>
+            </div>
+        </li>
+      </ol>
+
+    </section>
+</body>
+
+</html>
