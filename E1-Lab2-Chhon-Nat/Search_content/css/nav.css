@@ -1,0 +1,69 @@
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Noto Sans Khmer', sans-serif;
+}
+
+header {
+    background-color: grey;
+    margin: 0 auto;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.nav-container {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    width: 50%;
+    height: 55px;
+    justify-content: space-between;
+}
+
+.nav-container>ul:first-child>li {
+    list-style: none;
+}
+
+.nav-container>ul:first-child>li>a {
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+    flex-wrap: nowrap;
+    flex-direction: row;
+}
+
+.nav-container>ul:first-child>li>a>img {
+    height: auto;
+    width: 40px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+.nav-container>ul:first-child>li>a>h3 {
+    font-size: x-large;
+    font-weight: 900;
+}
+
+.nav-container>ul:nth-child(2) {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    align-items: center;
+}
+
+.nav-container>ul:nth-child(2)>li {
+    padding: 0 20px;
+    list-style: none;
+}
+
+.nav-container>ul:nth-child(2)>li>a {
+    text-decoration: none;
+    color: rgb(221, 221, 221);
+    font-size: 1.3rem;
+}
+
+.nav-container>ul:nth-child(2)>li>a:hover {
+    color: white;
+}
