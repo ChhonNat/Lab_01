@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form</title>
+    <link rel="stylesheet" href="headerStye/style.css">
+    <link rel="stylesheet" href="FormStyle/syle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro&display=swap" rel="stylesheet">
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <ul>
+                <li>
+                    <a href="/">
+                        <img style="height:auto;" alt="" src="https://avatars.githubusercontent.com/u/77770197?v=4"
+                            width="260" height="260" class="avatar avatar-user width-full border color-bg-default">
+                        <h3>Chhon Nat</h3>
+                    </a>
+                </li>
+            </ul>
+            <ul>
+                <li><a href="/">Home</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section>
+        <Form class="my-form">
+            <Picture class="profile">
+                <img src="images/,e.png" alt="images">
+            </Picture>
+            
+            <h2>Register header</h2>
+
+            <div class="con-textFields">
+                <div class="fields-name">
+                    <input type="text" placeholder="First name" required>
+                    <input type="text" placeholder="Last name" required>
+                </div>
+
+                <div class="mail-pass">
+                    <input type="text" placeholder="E-mail" required>
+                    <input type="password" placeholder="Password" required>
+                    <input type="password" placeholder="Re-Password" required>
+                </div>
+
+                <div class="gender">
+                    <div class="gender-male">
+                        <input type="radio" id="male" name="gender" value="male" checked >
+                        <label for="male">Male</label>
+                    </div>
+                    <div class="gender-female">
+                        <input type="radio" id="female" name="gender" value="female">
+                        <label for="female">Female</label>
+                    </div>
+                </div>
+
+                <div class="selectOpt">
+                    <select name="country" id="country">
+                        <option value="Cambodia">Cambodia</option>
+                        <option value="Thai">Thai</option>
+                        <option value="Lao">Lao</option>
+                        <option value="Vietnam">Vietnam</option>
+                    </select>
+                </div>
+
+                <div class="condition">
+                    <div class="opt1">
+                        <input type="checkbox" id="opt1" name="opt1" value="opt1" required checked>
+                        <label for="opt1">I agree with terms and condition</label>
+                    </div>
+                    <div class="opt2">
+                        <input type="checkbox" id="opt2" name="opt2" value="opt2">
+                        <label for="opt2">I want to receive the newsletter</label>
+                    </div>
+                </div>
+
+                <div class="btn">
+                    <button>Register</button>
+                </div>
+            </div>
+        </Form>
+    </section>
+</body>
+
+</html>

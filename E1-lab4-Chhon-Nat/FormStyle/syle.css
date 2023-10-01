@@ -1,0 +1,141 @@
+section {
+    font-size: 1rem;
+    font-family: 'Kantumruy Pro', sans-serif;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
+
+.my-form {
+    height: 60vh;
+    width: 31vw;
+    display: flex;
+    justify-content: flex-end;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    background-color: whitesmoke;
+    border-radius: 5px;
+}
+
+.profile {
+    margin-top: 2vh;
+    position: absolute;
+    top: -70px;
+
+}
+
+.profile img {
+    height: auto;
+    width: 85px;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+/* input fields */
+.con-textFields {
+    margin-top: 2vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    height: 50vh;
+}
+
+.con-textFields input,
+.con-textFields>.selectOpt select {
+    height: 30px;
+    border: none;
+    padding: 5px 0 5px 10px;
+    border-radius: 3px;
+
+}
+
+input[type="text"],
+input[type="password"],
+textarea {
+    border: none;
+    outline: none;
+    border-bottom: 1px solid #ccc;
+    /* You can adjust the color and thickness of the outline */
+}
+
+/* .con-textFields  input:active, .con-textFields > .selectOpt  select:active{
+    border: none;
+} */
+
+.fields-name {
+    display: flex;
+    justify-content: space-between;
+}
+
+.mail-pass {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.mail-pass input {
+    width: 369px;
+}
+
+.mail-pass input:nth-child(1),
+.mail-pass input:nth-child(2) {
+    margin-bottom: 23px;
+}
+
+.selectOpt {
+    width: 100%;
+}
+
+.selectOpt>select {
+    width: 100%;
+}
+
+.gender {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+/* ..gender > .gender-male{
+    marg
+} */
+.gender>.gender-male,
+.gender>.gender-female {
+    display: flex;
+    align-items: center;
+    padding: 0 20px;
+}
+
+.gender>.gender-male input,
+.gender>.gender-female input {
+    margin-right: 10px;
+}
+
+.condition {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.condition .opt1,
+.condition .opt2 {
+    display: flex;
+    align-items: center;
+}
+
+.condition .opt1 input,
+.condition .opt2 input {
+    margin-right: 10px;
+}
+
+.btn>button {
+    width: 100%;
+    padding: 5px 0;
+    letter-spacing: 1px;
+    font-size: 1.2rem;
+}
