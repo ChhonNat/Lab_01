@@ -1,0 +1,17 @@
+footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 10px;
+}
+footer > h5{
+    border-top: 5px solid var(--bk-color);
+    /* background-color: var(--bg-card); */
+    width: var(--default-width);
+    font-size: 1rem;
+    font-weight: normal;
+    width: 60%;
+    text-align: center;
+    padding: 60px;
+    margin: 5px;
+}
