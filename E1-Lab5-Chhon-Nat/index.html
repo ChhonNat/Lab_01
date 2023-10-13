@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <title>Lab5 Christmas  tree</title>
+    <style>
+        #canpic, #canmovement {
+            position: absolute;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100vh;
+        }
+
+        .font-img{
+            position: absolute;
+            width: 99%;
+            height: 99vh;
+            z-index: 100;
+            margin: 0;
+            padding: 0;
+        }
+        .animal{
+            position: absolute;
+            z-index: 50;
+            bottom: 0;
+            left: 0;
+        }
+        .font-host{
+            margin-top: 5vh;
+        }
+    </style>
+</head>
+<body>
+<canvas id="canpic" width = 800; height = 450; >Your browser does not support the canvas element.</canvas>
+<canvas id="canmovement" width = 800; height = 450; >Your browser does not support the canvas element.</canvas>
+<img class="font-img" src="images/5WWU.gif">
+<marquee behavior="" direction="">
+    <img class="font-host" src="images/chrastmasHost.gif">
+</marquee>
+<img class="animal" src="images/animal.gif">
+<script src="script.js"></script>
+
+</body>
+</html>
+
+
+
+
+
+
+
