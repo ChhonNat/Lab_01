@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Lab08</title>
+    <link rel="stylesheet" href="headerStye/style.css">
+    <link rel="stylesheet" href="FormStyle/syle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro&display=swap" rel="stylesheet">
+
+
+    <style>
+        .bg-origin-example {
+            background-image: url(images/leopard.jpg);
+            background-repeat: no-repeat;
+            color: #FFF;
+
+            background-origin: content-box;
+        }
+
+        .bg-multi-layer {
+            width: 100%;
+            height: 90vh;
+            background: url(images/Group\ 7.png),
+                url(images/Group\ 6.png),
+                url(images/Group\ 5.png),
+                url(images/Group\ 4.png),
+                url(images/Group\ 3.png),
+                url(images/winter-2522720_1920.jpg),
+                url(images/Group\ 1.png);
+                background-repeat: no-repeat;
+
+            background-size: cover;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <ul>
+                <li>
+                    <a href="/">
+                        <img style="height:auto;" alt="" src="https://avatars.githubusercontent.com/u/77770197?v=4"
+                            width="260" height="260" class="avatar avatar-user width-full border color-bg-default">
+                        <h3>Chhon Nat</h3>
+                    </a>
+                </li>
+            </ul>
+            <ul>
+                <li><a href="/">Home</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <section>
+        <div class="bg-origin-example">
+            <h3>Background origin</h3>
+        </div>
+    
+        <div class="bg-multi-layer"></div>
+    </section>
+    
+</body>
+
+</html>
