@@ -4,222 +4,121 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>RUPP</title>
+    <title>Lab10</title>
+    <link rel="stylesheet" href="headerStye/style.css">
+    <link rel="stylesheet" href="FormStyle/syle.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="styles/header.css">
-    <link rel="stylesheet" href="styles/carousel.css">
-    <link rel="stylesheet" href="styles/content.css">
-    <link rel="stylesheet" href="styles/footer.css">
+
+
     <style>
-        * {
-            font-family: 'Kantumruy Pro', sans-serif;
+        .con_ul{
+            margin-top: 10vh;
+            width: 100%;
+            display: flex;
+            justify-content: center;
+            align-items: center;
         }
 
-        :root {
-            --font-color: #A73121;
-            --bk-color: #952323;
-            --bg-card: #F2E8C6;
-            --default-width: 60vw;
+        .txtlink2, .button1{
+            color: black;
         }
+
+        .txtlink{
+            color: green;
+        }
+
+        .con_ul > li{
+            margin: 5px 20px;
+            list-style: none;
+        }
+
+        .con_ul > li:nth-child(3), .con_ul > li:nth-child(4){
+            border: 1px solid green;
+            padding: 10px;
+        }
+
+        .txtlink{
+            text-decoration: none;
+        }
+
+        .con_ul > li:nth-child(4){
+            background-color: rgba(255, 0, 0, 0.455);
+        }
+
+        .btn{
+            color: white;
+
+        }
+
+        .txtlink2:hover{
+            color: green;
+        }
+
+        .txtlink:hover{
+            text-decoration: underline;
+        }
+
+        .button1{
+            text-decoration: none;
+        }
+
+        .con_ul > li:nth-child(3):hover{
+            background-color: green;
+        }
+        .button1:hover{
+            color: white;
+        }
+
+        .btn{
+            text-decoration: none;
+        }
+
+        .con_ul > li:nth-child(4):hover, .con_ul > li:nth-child(4):visited{
+            background-color: red;
+        }
+
+        .con_ul > li:nth-child(4) > a:hover{
+            color: white;
+        }
+
     </style>
 </head>
 
 <body>
-    <!-- my-header -->
-    <header style="width: 100%; margin-top: 20px;">
-        <div class="my-head">
-            <div class="logo">
-                <img style="width: 100px;" src="images/Rupp_logo (1).png" alt="logo">
-            </div>
-            <div class="con-head-lists">
-                <ul>
-                    <li><a href="#">HOME</a></li>
-                    <li><a href="#">ABOUT</a></li>
-                    <li><a href="#">PROJECT</a></li>
-                    <li><a href="#">MANAGEMENT</a></li>
-                    <li><a href="#">FOUNDATION</a></li>
-                    <li><a href="#">STUDIES</a></li>
-                    <li><a href="#">IRO</a></li>
-                    <li><a href="#">GRADUATE</a></li>
-                    <li><a href="#">PROGRAMS</a></li>
-                    <li><a href="#">UMAP</a></li>
-                    <li><a href="#">CONTACT</a></li>
-                    <li><a href="#">MAIL</a></li>
-                    <li><a href="#">E-LIBRARY</a></li>
-                    <li><a href="#">JOURNAL</a></li>
-                </ul>
-                <div class="con-HTitle">
-                    <h2>សាកលវិទ្យាល័យភូមិន្ទភ្នំពេញ</h2>
-                    <h4>ROYAL UNIVERSITY OF PHNOM PENH</h4>
-                    <p>Education, Research, and Service to Society</p>
-                </div>
-            </div>
+    <header>
+        <div class="container">
+            <ul>
+                <li>
+                    <a href="/">
+                        <img style="height:auto;" alt="" src="https://avatars.githubusercontent.com/u/77770197?v=4"
+                            width="260" height="260" class="avatar avatar-user width-full border color-bg-default">
+                        <h3>Chhon Nat</h3>
+                    </a>
+                </li>
+            </ul>
+            <ul>
+                <li><a href="/">Home</a></li>
+            </ul>
         </div>
-
-        <nav style="width: 100%;">
-            <div class="my-menu">
-                <ul>
-                    <li><a href="#">FACULTY OF SCIENCE</a></li>
-                    <li><a href="#">FACULTY OF SCIENCE</a></li>
-                    <li><a href="#">FACULTY OF SCIENCE</a></li>
-                    <li><a href="#">FACULTY OF SCIENCE</a></li>
-                    <li><a href="#">FACULTY OF SCIENCE</a></li>
-                    <li><a href="#">FACULTY OF SCIENCE</a></li>
-                    <li><a href="#">FACULTY OF SCIENCE</a></li>
-                    <li><a href="#">FACULTY OF SCIENCE</a></li>
-                    <li><a href="#">FACULTY OF SCIENCE</a></li>
-                    <li><a href="#">FACULTY OF SCIENCE</a></li>
-                </ul>
-            </div>
-        </nav>
     </header>
 
-    <!-- my-content -->
-    <div class="container">
-        <div class="con-carousel">
-            <section class="carousel" aria-label="Gallery">
-                <ol class="carousel__viewport">
-                    <li id="carousel__slide1" tabindex="0" class="carousel__slide">
-                        <div class="carousel__snapper">
-                            <a href="#carousel__slide4" class="carousel__prev">Go to last slide</a>
-                            <a href="#carousel__slide2" class="carousel__next">Go to next slide</a>
-                        </div>
-                    </li>
-                    <li id="carousel__slide2" tabindex="0" class="carousel__slide">
-                        <div class="carousel__snapper"></div>
-                        <a href="#carousel__slide1" class="carousel__prev">Go to previous slide</a>
-                        <a href="#carousel__slide3" class="carousel__next">Go to next slide</a>
-                    </li>
-                    <li id="carousel__slide3" tabindex="0" class="carousel__slide">
-                        <div class="carousel__snapper"></div>
-                        <a href="#carousel__slide2" class="carousel__prev">Go to previous slide</a>
-                        <a href="#carousel__slide4" class="carousel__next">Go to next slide</a>
-                    </li>
-                    <li id="carousel__slide4" tabindex="0" class="carousel__slide">
-                        <div class="carousel__snapper"></div>
-                        <a href="#carousel__slide3" class="carousel__prev">Go to previous slide</a>
-                        <a href="#carousel__slide1" class="carousel__next">Go to first slide</a>
-                    </li>
-                </ol>
-                <aside class="carousel__navigation">
-                    <ol class="carousel__navigation-list">
-                        <li class="carousel__navigation-item">
-                            <a href="#carousel__slide1" class="carousel__navigation-button">Go to slide 1</a>
-                        </li>
-                        <li class="carousel__navigation-item">
-                            <a href="#carousel__slide2" class="carousel__navigation-button">Go to slide 2</a>
-                        </li>
-                        <li class="carousel__navigation-item">
-                            <a href="#carousel__slide3" class="carousel__navigation-button">Go to slide 3</a>
-                        </li>
-                        <li class="carousel__navigation-item">
-                            <a href="#carousel__slide4" class="carousel__navigation-button">Go to slide 4</a>
-                        </li>
-                    </ol>
-                </aside>
-            </section>
-        </div>
+    <section>
+        <h3>Link can style in deferent way</h3>
+        <ul class="con_ul">
+            <li><a href="#" class="txtlink2">Text Link</a></li>
+            <li><a href="#" class="txtlink">Text Link</a></li>
+            <li><a href="#" class="button button1">Text Button</a></li>
+            <li><a href="#" class="btn">Text Button</a></li>
+        </ul>
 
-        <div class="con-content">
-            <div class="child-con-content">
-                <div class="con-sections">
 
-                    <section class="section">
-                        <div class="con-cards">
-                            <div class="sec_card card1">
-                                card 1
-                            </div>
-                            <div class="sec_card card2">
-                                card 2
-                            </div>
-                        </div>
-                    </section>
+        <picture>
+            <img style="width: 100%;" src="images/Screenshot 2023-10-30 200039.png">
+        </picture>
+    </section>
 
-                    <section class="section">
-                        <div class="sec_card card3">
-                            card 3
-                        </div>
-                    </section>
-
-                    <section class="section">
-                        <div class="sec_card card4">
-                            <h2>Overview of University</h2>
-                            <div class="con_sub_cards">
-                                <div class="sub_card">
-                                    <img src="images/User-Profile-PNG.png" alt="profile">
-                                    sub-card 1
-                                </div>
-                                <div class="sub_card">
-                                    <img src="images/User-Profile-PNG.png" alt="profile">
-                                    sub-card 2
-                                </div>
-                                <div class="sub_card">
-                                    <img src="images/User-Profile-PNG.png" alt="profile">
-                                    sub-card 3
-                                </div>
-                                <div class="sub_card">
-                                    <img src="images/User-Profile-PNG.png" alt="profile">
-                                    sub-card 4
-                                </div>
-                                <div class="sub_card">
-                                    <img src="images/User-Profile-PNG.png" alt="profile">
-                                    sub-card 5
-                                </div>
-                            </div>
-                        </div>
-                    </section>
-
-                    <section class="section">
-                        <div class="sec_card card5">
-                            <p>Find RUPP on</p>
-                            <div></div>
-                        </div>
-                    </section>
-                </div>
-
-                <div class="con-asides">
-                    <aside class="my_aside1">
-                        <div class="as-card1">
-                            aside 1
-                        </div>
-                    </aside>
-
-                    <aside class="my_aside2">
-                        <div class="as-card2">
-                            aside 2
-                        </div>
-                    </aside>
-
-                    <aside class="my_aside3">
-                        <div class="as-card3">
-                            aside 3
-                        </div>
-                    </aside>
-
-                    <aside class="my_aside2">
-                        <div class="as-card2">
-                            aside 4
-                        </div>
-                    </aside>
-
-                    <aside class="my_aside5">
-                        <div class="as-card5">
-                            aside 5
-                        </div>
-                    </aside>
-                </div>
-            </div>
-        </div>
-    </div>
-
-    <!-- my-footer -->
-    <footer>
-        <h5>All Rights Reserved, Copyright © 2023 Royal University of Phnom Penh (RUPP)
-            Russian Federation Boulevard, Toul Kork, Phnom Penh, Cambodia. Tel: 855-23-883-640 Fax: 855-23-880-116
-            Designed by: IT Center</h5>
-    </footer>
 </body>
 
 </html>
