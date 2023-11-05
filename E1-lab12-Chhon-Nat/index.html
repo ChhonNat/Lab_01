@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>lab 12</title>
+    <link rel="stylesheet" href="headerStye/style.css">
+    <link rel="stylesheet" href="FormStyle/syle.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kantumruy+Pro&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="footerStyle/style.css">
+    <link rel="stylesheet" href="navbar sub sub/style.css">
+
+    <style>
+        .card_blur {
+            width: 100%;
+            background-image: url('/images/background.jpg');
+            background-size: cover;
+            background-repeat: no-repeat;
+            padding: 5rem;
+            margin-bottom: 5vh;
+        }
+
+        .card {
+            padding: 50px;
+            background-image: url('/images/image5.webp');
+            background-size: cover;
+            background-repeat: no-repeat;
+            -webkit-backdrop-filter: blur(1px);
+            backdrop-filter: blur(1px);
+            border: 1px solid rgba(181, 239, 255, 0.25);
+            margin-bottom: 5vh;
+        }
+
+        .card2 {
+            background: rgba(181, 239, 255, 0.5);
+            -webkit-backdrop-filter: blur(1px);
+            backdrop-filter: blur(1px);
+            border: 1px solid rgba(181, 239, 255, 0.25);
+        }
+
+        .card>h1,
+        .card>p {
+            font-family: 'Kantumruy';
+            font-size: 1.2rem;
+        }
+
+        .card3 {
+            width: 100%;
+        }
+
+        .card3>.con_card3 {
+            width: 390px;
+            display: block;
+            position: relative;
+            padding: 5px;
+            border: 5px solid;
+        }
+
+        .con_content {
+            position: absolute;
+            top: 0px;
+            height: 86%;
+            width: 50%;
+            padding: 5px;
+            background: rgba(181, 239, 255, 0.5);
+            -webkit-backdrop-filter: blur(1px);
+            backdrop-filter: blur(1px);
+            border: 1px solid rgba(181, 239, 255, 0.25);
+        }
+
+        .form{
+            margin-top: 5vh;
+        }
+        .con_form{
+            background-color: whitesmoke;
+            margin-top: 5vh;
+            padding: 10px 20px;
+        }
+        .con_form > form > .container_form{
+            display: flex;
+            flex-direction: row;
+            justify-content: center;
+        }
+        .right, .left{
+            margin: 5px;
+        }
+        .con_fields{
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <div class="container">
+            <ul>
+                <li>
+                    <a href="/">
+                        <img style="height:auto;" alt="" src="https://avatars.githubusercontent.com/u/77770197?v=4"
+                            width="260" height="260" class="avatar avatar-user width-full border color-bg-default">
+                        <h3>Chhon Nat</h3>
+                    </a>
+                </li>
+            </ul>
+            <ul>
+                <li><a href="/">Home</a></li>
+            </ul>
+
+        </div>
+    </header>
+
+    <!-- Content -->
+    <section>
+        <div class="card_blur">
+            <h1>1. blur background</h1>
+
+            <section class="card">
+                <h3>What is Lorem Ipsum?</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and
+                    scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                    leap
+                    into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with
+                    the
+                    release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                    publishing
+                    software like Aldus PageMaker including versions of Lorem Ipsum.
+                </p>
+            </section>
+
+            <h1>2. blur card</h1>
+
+            <section class="card card2">
+                <h3>What is Lorem Ipsum?</h3>
+                <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the
+                    industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of type
+                    and
+                    scrambled it to make a type specimen book. It has survived not only five centuries, but also the
+                    leap
+                    into electronic typesetting, remaining essentially unchanged. It was popularised in the 1960s with
+                    the
+                    release of Letraset sheets containing Lorem Ipsum passages, and more recently with desktop
+                    publishing
+                    software like Aldus PageMaker including versions of Lorem Ipsum.
+                </p>
+            </section>
+        </div>
+
+        <div class="card3">
+            <h1>3. combine style card</h1>
+
+            <section class="con_card3">
+                <img src="images/image4.webp" alt="">
+                <div class="con_content">
+                    <h3>What is Lorem Ipsum?</h3>
+                    <p>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been
+                        the
+                        industry's standard dummy text ever since the 1500s, when an unknown printer took a galley of
+                    </p>
+                </div>
+            </section>
+        </div>  
+
+        <div class="form">
+            <h1>4. Form</h1>
+
+            <div class="con_form">
+                <form>
+                    <h4>Get In Touch With Us...</h4>
+                    <div class="container_form">
+                        <div class="left">
+                            <div class="con_fields">
+                                <label for="name">Name</label>
+                                <input type="text" name="name" id="name">
+                            </div>
+                            <div class="con_fields">
+                                <label for="mail">Email</label>
+                                <input type="email" name="mail" id="mail">
+                            </div>
+                            <div class="con_fields">
+                                <label for="phone">Phone</label>
+                                <input type="phone" name="phone" id="phone">
+                            </div>
+                            <div class="con_fields">
+                                <label for="url">Website</label>
+                                <input type="url" name="url" id="url">
+                            </div>
+                        </div>
+                        
+                        <div class="right">
+                            <div class="con_fields">
+                                <label for="message">Your Message</label>
+                                <textarea id="message" name="message" rows="4" cols="50"></textarea>
+                            </div>
+                            <div class="con_fields">
+                                <button style="padding: 5px; width: 80px; margin-top: 30px; background-color: rgb(51, 51, 255); color: white;">Submit</button>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </di>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <!-- <footer class="con-external">
+        <h1>3. External style</h1>
+
+        <div class="con-footer">
+            <div class="info">
+                <h3>Info</h3>
+                <p>Free and open-source software, which is also often referred to as open source software
+                    and free software, is a maturing technology with major companies using free software to
+                    provide both services and technology to both end-users and technical consumers. The ease
+                    of dissemination has allowed for increased modularity, which allows for smaller groups
+                    to contribute to projects as well as simplifying collaboration. </p>
+
+                <button>LEARN MORE</button>
+            </div>
+            <div class="about">
+                <ul>
+                    <h3>About Us</h3>
+                    <li>services</li>
+                    <li>support</li>
+                    <li>Friendly</li>
+                </ul>
+            </div>
+            <div class="contact">
+                <ul>
+                    <h3>Contact Us</h3>
+                    <li><i><img src="icons/facebook.png" alt="facebook" width="50px"></i>Facebook</li>
+                    <li><i><img src="icons/instagram.png" alt=Instagram" width="50px"></i>Instagram</li>
+                    <li><i><img src="icons/twitter.png" alt="Twitter" width="50px"></i>Twitter</li>
+                    <li><i><img src="icons/telegram.png" alt="Telegram" width="50px"></i>Telegram</li>
+                </ul>
+            </div>
+        </div>
+    </footer> -->
+</body>
+
+</html>
